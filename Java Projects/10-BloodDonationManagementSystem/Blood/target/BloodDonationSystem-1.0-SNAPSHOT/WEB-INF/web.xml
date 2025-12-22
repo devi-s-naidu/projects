@@ -1,0 +1,36 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>DonorServlet</servlet-name>
+        <servlet-class>com.blooddonation.controller.DonorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DonorServlet</servlet-name>
+        <url-pattern>/addDonor</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <servlet-class>com.blooddonation.controller.AdminLoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <url-pattern>/adminLogin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>SearchDonorServlet</servlet-name>
+    <servlet-class>com.blooddonation.controller.SearchDonorServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SearchDonorServlet</servlet-name>
+    <url-pattern>/searchDonor</url-pattern>
+</servlet-mapping>
+    
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
+</web-app>
