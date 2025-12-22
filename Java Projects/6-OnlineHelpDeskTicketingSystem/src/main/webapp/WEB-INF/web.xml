@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.gqt.controller.LoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+</servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.gqt.controller.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TicketServlet</servlet-name>
+        <servlet-class>com.gqt.controller.TicketServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TicketServlet</servlet-name>
+        <url-pattern>/submitTicket</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    <servlet-name>AdminTicketServlet</servlet-name>
+    <servlet-class>com.gqt.controller.AdminTicketServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AdminTicketServlet</servlet-name>
+    <url-pattern>/AdminTicketServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>UpdateTicketServlet</servlet-name>
+    <servlet-class>com.gqt.controller.UpdateTicketServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UpdateTicketServlet</servlet-name>
+    <url-pattern>/UpdateTicketServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ViewTicketsServlet</servlet-name>
+    <servlet-class>com.gqt.controller.ViewTicketsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ViewTicketsServlet</servlet-name>
+    <url-pattern>/ViewTicketsServlet</url-pattern>
+</servlet-mapping>
+
+
+</web-app>
