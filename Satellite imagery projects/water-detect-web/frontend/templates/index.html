@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Waterbody Detection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css"/>
+
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    #map {
+      height: 78vh;
+      border-bottom: 2px solid #ccc;
+    }
+
+    #controls {
+      padding: 10px;
+      background: #f7f7f7;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #ddd;
+    }
+
+    #statusBox {
+      padding: 8px 12px;
+      background: #eef;
+      border-left: 4px solid #36f;
+      display: none;
+      margin: 10px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    button {
+      padding: 6px 14px;
+      cursor: pointer;
+      border: none;
+      background: #0078ff;
+      color: white;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    button:hover { background: #005fcc; }
+  </style>
+</head>
+
+<body>
+
+  <div id="map"></div>
+
+  <div id="controls">
+    <input type="file" id="kmlFile" accept=".kml"/>
+    <button id="detectBtn">Detect Waterbodies</button>
+
+    <label>
+      Zoom:
+      <select id="zoomSel">
+        <option>18</option>
+        <option>17</option>
+        <option>16</option>
+      </select>
+    </label>
+  </div>
+
+  <div id="statusBox"></div>
+
+  <!-- Leaflet -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+
+  <!-- Your main logic -->
+  <script src="/static/main.js"></script>
+
+</body>
+</html>
