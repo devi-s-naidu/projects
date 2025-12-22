@@ -1,0 +1,37 @@
+<web-app>
+    <servlet>
+        <servlet-name>AddDepartment</servlet-name>
+        <servlet-class>com.gqt.controller.AddDepartmentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddDepartment</servlet-name>
+        <url-pattern>/addDepartment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddBudget</servlet-name>
+        <servlet-class>com.gqt.controller.AddBudgetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddBudget</servlet-name>
+        <url-pattern>/addBudget</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateBudget</servlet-name>
+        <servlet-class>com.gqt.controller.UpdateBudgetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateBudget</servlet-name>
+        <url-pattern>/updateBudget</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteBudget</servlet-name>
+        <servlet-class>com.gqt.controller.DeleteBudgetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteBudget</servlet-name>
+        <url-pattern>/deleteBudget</url-pattern>
+    </servlet-mapping>
+</web-app>

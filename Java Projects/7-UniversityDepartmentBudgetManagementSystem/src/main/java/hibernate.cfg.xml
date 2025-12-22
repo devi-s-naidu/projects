@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database Connection Settings -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/university_budget_db?useSSL=false&amp;serverTimezone=UTC</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">2003</property>
+
+        <!-- JDBC Connection Pool (Optional) -->
+        <property name="connection.pool_size">10</property>
+
+        <!-- SQL Dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+        <!-- Show SQL in Console -->
+        <property name="show_sql">true</property>
+
+        <!-- Hibernate Session Context -->
+        <property name="current_session_context_class">thread</property>
+
+        <!-- Entity Mappings -->
+        <mapping class="com.gqt.model.Department"/>
+        <mapping class="com.gqt.model.Budget"/>
+    </session-factory>
+</hibernate-configuration>
