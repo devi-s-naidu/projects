@@ -1,0 +1,2445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="222107">
+        <Style id="222110">
+            <IconStyle id="222111">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222112">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222115">
+            <IconStyle id="222116">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222117">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222120">
+            <IconStyle id="222121">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222122">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222125">
+            <IconStyle id="222126">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222127">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222130">
+            <IconStyle id="222131">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222132">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222135">
+            <IconStyle id="222136">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222137">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222140">
+            <IconStyle id="222141">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222142">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222145">
+            <IconStyle id="222146">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222147">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222150">
+            <IconStyle id="222151">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222152">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222155">
+            <IconStyle id="222156">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222157">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222160">
+            <IconStyle id="222161">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222162">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222165">
+            <IconStyle id="222166">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222167">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222170">
+            <IconStyle id="222171">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222172">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222175">
+            <IconStyle id="222176">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222177">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222180">
+            <IconStyle id="222181">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222182">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222185">
+            <IconStyle id="222186">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222187">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222190">
+            <IconStyle id="222191">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222192">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222195">
+            <IconStyle id="222196">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222197">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222200">
+            <IconStyle id="222201">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222202">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222205">
+            <IconStyle id="222206">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222207">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222210">
+            <IconStyle id="222211">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222212">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222215">
+            <IconStyle id="222216">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222217">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222220">
+            <IconStyle id="222221">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222222">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222225">
+            <IconStyle id="222226">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222227">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222230">
+            <IconStyle id="222231">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222232">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222235">
+            <IconStyle id="222236">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222237">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222240">
+            <IconStyle id="222241">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222242">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222245">
+            <IconStyle id="222246">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222247">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222250">
+            <IconStyle id="222251">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222252">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222255">
+            <IconStyle id="222256">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222257">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222260">
+            <IconStyle id="222261">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222262">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222265">
+            <IconStyle id="222266">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222267">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222270">
+            <IconStyle id="222271">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222272">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222275">
+            <IconStyle id="222276">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222277">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222280">
+            <IconStyle id="222281">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222282">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222285">
+            <IconStyle id="222286">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222287">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222290">
+            <IconStyle id="222291">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222292">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222295">
+            <IconStyle id="222296">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222297">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222300">
+            <IconStyle id="222301">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222302">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222305">
+            <IconStyle id="222306">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222307">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222310">
+            <IconStyle id="222311">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222312">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222315">
+            <IconStyle id="222316">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222317">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222320">
+            <IconStyle id="222321">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222322">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222325">
+            <IconStyle id="222326">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222327">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222330">
+            <IconStyle id="222331">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222332">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222335">
+            <IconStyle id="222336">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222337">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222340">
+            <IconStyle id="222341">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222342">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222345">
+            <IconStyle id="222346">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222347">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222350">
+            <IconStyle id="222351">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222352">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222355">
+            <IconStyle id="222356">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222357">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222360">
+            <IconStyle id="222361">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222362">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222365">
+            <IconStyle id="222366">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222367">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222370">
+            <IconStyle id="222371">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222372">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222375">
+            <IconStyle id="222376">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222377">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222380">
+            <IconStyle id="222381">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222382">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222385">
+            <IconStyle id="222386">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222387">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222390">
+            <IconStyle id="222391">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222392">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222395">
+            <IconStyle id="222396">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222397">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222400">
+            <IconStyle id="222401">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222402">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222405">
+            <IconStyle id="222406">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222407">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222410">
+            <IconStyle id="222411">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222412">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222415">
+            <IconStyle id="222416">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222417">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222420">
+            <IconStyle id="222421">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222422">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222425">
+            <IconStyle id="222426">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222427">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222430">
+            <IconStyle id="222431">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222432">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222435">
+            <IconStyle id="222436">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222437">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222440">
+            <IconStyle id="222441">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222442">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222445">
+            <IconStyle id="222446">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222447">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222450">
+            <IconStyle id="222451">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222452">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222455">
+            <IconStyle id="222456">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222457">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222460">
+            <IconStyle id="222461">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222462">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222465">
+            <IconStyle id="222466">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222467">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222470">
+            <IconStyle id="222471">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222472">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222475">
+            <IconStyle id="222476">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222477">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222480">
+            <IconStyle id="222481">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222482">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222485">
+            <IconStyle id="222486">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222487">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222490">
+            <IconStyle id="222491">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222492">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222495">
+            <IconStyle id="222496">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222497">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222500">
+            <IconStyle id="222501">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222502">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222505">
+            <IconStyle id="222506">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222507">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222510">
+            <IconStyle id="222511">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222512">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222515">
+            <IconStyle id="222516">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222517">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222520">
+            <IconStyle id="222521">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222522">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222525">
+            <IconStyle id="222526">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222527">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222530">
+            <IconStyle id="222531">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222532">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222535">
+            <IconStyle id="222536">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222537">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222540">
+            <IconStyle id="222541">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222542">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222545">
+            <IconStyle id="222546">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222547">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222550">
+            <IconStyle id="222551">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222552">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222555">
+            <IconStyle id="222556">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222557">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222560">
+            <IconStyle id="222561">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222562">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222565">
+            <IconStyle id="222566">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222567">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222570">
+            <IconStyle id="222571">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222572">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222575">
+            <IconStyle id="222576">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222577">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222580">
+            <IconStyle id="222581">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222582">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222585">
+            <IconStyle id="222586">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222587">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222590">
+            <IconStyle id="222591">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222592">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222595">
+            <IconStyle id="222596">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222597">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222600">
+            <IconStyle id="222601">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222602">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222605">
+            <IconStyle id="222606">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222607">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222610">
+            <IconStyle id="222611">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222612">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222615">
+            <IconStyle id="222616">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222617">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222620">
+            <IconStyle id="222621">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222622">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222625">
+            <IconStyle id="222626">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222627">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222630">
+            <IconStyle id="222631">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222632">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222635">
+            <IconStyle id="222636">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222637">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222640">
+            <IconStyle id="222641">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222642">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222645">
+            <IconStyle id="222646">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222647">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222650">
+            <IconStyle id="222651">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222652">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222655">
+            <IconStyle id="222656">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222657">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222660">
+            <IconStyle id="222661">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222662">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222665">
+            <IconStyle id="222666">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222667">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222670">
+            <IconStyle id="222671">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222672">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222675">
+            <IconStyle id="222676">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222677">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222680">
+            <IconStyle id="222681">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222682">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222685">
+            <IconStyle id="222686">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222687">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222690">
+            <IconStyle id="222691">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222692">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222695">
+            <IconStyle id="222696">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222697">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222700">
+            <IconStyle id="222701">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222702">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222705">
+            <IconStyle id="222706">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222707">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222710">
+            <IconStyle id="222711">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222712">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="222715">
+            <IconStyle id="222716">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="222717">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Placemark id="222109">
+            <name>MedianOpening_0.83</name>
+            <description>Confidence: 0.83
+Image: 26.56169030612983_90.07948435291422.png</description>
+            <styleUrl>#222110</styleUrl>
+            <Point id="222108">
+                <coordinates>90.079833984375,26.561594192772638,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222114">
+            <name>MedianOpening_0.36</name>
+            <description>Confidence: 0.36
+Image: 26.5614051910167_90.08043616885084.png</description>
+            <styleUrl>#222115</styleUrl>
+            <Point id="222113">
+                <coordinates>90.08004760742188,26.56150713533995,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222119">
+            <name>MedianOpening_0.55</name>
+            <description>Confidence: 0.55
+Image: 26.55179861570494_90.09802719815785.png</description>
+            <styleUrl>#222120</styleUrl>
+            <Point id="222118">
+                <coordinates>90.09796142578125,26.5518051629644,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222124">
+            <name>MedianOpening_0.30</name>
+            <description>Confidence: 0.30
+Image: 26.5330462980928_90.11769604763286.png</description>
+            <styleUrl>#222125</styleUrl>
+            <Point id="222123">
+                <coordinates>90.117919921875,26.533118305307028,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222129">
+            <name>MedianOpening_0.91</name>
+            <description>Confidence: 0.91
+Image: 26.54597299065794_90.12986499104875.png</description>
+            <styleUrl>#222130</styleUrl>
+            <Point id="222128">
+                <coordinates>90.12994384765625,26.546026661796468,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222134">
+            <name>MedianOpening_0.67</name>
+            <description>Confidence: 0.67
+Image: 26.55124274563801_90.13671083848116.png</description>
+            <styleUrl>#222135</styleUrl>
+            <Point id="222133">
+                <coordinates>90.1370849609375,26.551449265809367,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222139">
+            <name>MedianOpening_0.72</name>
+            <description>Confidence: 0.72
+Image: 26.55170230144779_90.13757989118852.png</description>
+            <styleUrl>#222140</styleUrl>
+            <Point id="222138">
+                <coordinates>90.13720703125,26.551488979709745,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222144">
+            <name>MedianOpening_0.51</name>
+            <description>Confidence: 0.51
+Image: 26.55260712787654_90.13931198187792.png</description>
+            <styleUrl>#222145</styleUrl>
+            <Point id="222143">
+                <coordinates>90.1390380859375,26.552486405081346,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222149">
+            <name>MedianOpening_0.88</name>
+            <description>Confidence: 0.88
+Image: 26.55369969974381_90.1460620658232.png</description>
+            <styleUrl>#222150</styleUrl>
+            <Point id="222148">
+                <coordinates>90.145751953125,26.553705299037794,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222154">
+            <name>MedianOpening_0.53</name>
+            <description>Confidence: 0.53
+Image: 26.55163450930575_90.15969113524433.png</description>
+            <styleUrl>#222155</styleUrl>
+            <Point id="222153">
+                <coordinates>90.15969848632812,26.551641725352262,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222159">
+            <name>MedianOpening_0.69</name>
+            <description>Confidence: 0.69
+Image: 26.55120730654566_90.1666079587879.png</description>
+            <styleUrl>#222160</styleUrl>
+            <Point id="222158">
+                <coordinates>90.1668701171875,26.551296519910466,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222164">
+            <name>MedianOpening_0.76</name>
+            <description>Confidence: 0.76
+Image: 26.55889916349681_90.17881757136196.png</description>
+            <styleUrl>#222165</styleUrl>
+            <Point id="222163">
+                <coordinates>90.1790771484375,26.5590695003771,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222169">
+            <name>MedianOpening_0.36</name>
+            <description>Confidence: 0.36
+Image: 26.56259143015169_90.18321739653057.png</description>
+            <styleUrl>#222170</styleUrl>
+            <Point id="222168">
+                <coordinates>90.18356323242188,26.562842008707428,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222174">
+            <name>MedianOpening_0.30</name>
+            <description>Confidence: 0.30
+Image: 26.5632053233928_90.18395313007402.png</description>
+            <styleUrl>#222175</styleUrl>
+            <Point id="222173">
+                <coordinates>90.18356323242188,26.562860336380005,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222179">
+            <name>MedianOpening_0.71</name>
+            <description>Confidence: 0.71
+Image: 26.56381921663373_90.18468886361698.png</description>
+            <styleUrl>#222180</styleUrl>
+            <Point id="222178">
+                <coordinates>90.18502807617188,26.564108138528937,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222184">
+            <name>MedianOpening_0.29</name>
+            <description>Confidence: 0.29
+Image: 26.56443404576262_90.18542362634591.png</description>
+            <styleUrl>#222185</styleUrl>
+            <Point id="222183">
+                <coordinates>90.18502807617188,26.564108138528937,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222189">
+            <name>MedianOpening_0.88</name>
+            <description>Confidence: 0.88
+Image: 26.5675153611757_90.18908988200764.png</description>
+            <styleUrl>#222190</styleUrl>
+            <Point id="222188">
+                <coordinates>90.18899536132812,26.56744674429636,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222194">
+            <name>MedianOpening_0.26</name>
+            <description>Confidence: 0.26
+Image: 26.56855684676032_90.19072042987573.png</description>
+            <styleUrl>#222195</styleUrl>
+            <Point id="222193">
+                <coordinates>90.19085693359375,26.568608971693713,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222199">
+            <name>MedianOpening_0.28</name>
+            <description>Confidence: 0.28
+Image: 26.56663534078562_90.19988648432508.png</description>
+            <styleUrl>#222200</styleUrl>
+            <Point id="222198">
+                <coordinates>90.19964599609375,26.566738100518336,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222204">
+            <name>MedianOpening_0.79</name>
+            <description>Confidence: 0.79
+Image: 26.56688884892295_90.21654677936866.png</description>
+            <styleUrl>#222205</styleUrl>
+            <Point id="222203">
+                <coordinates>90.21685791015625,26.566785445390117,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222209">
+            <name>MedianOpening_0.43</name>
+            <description>Confidence: 0.43
+Image: 26.56622809463149_90.22839205914696.png</description>
+            <styleUrl>#222210</styleUrl>
+            <Point id="222208">
+                <coordinates>90.22811889648438,26.566276868808252,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222214">
+            <name>MedianOpening_0.32</name>
+            <description>Confidence: 0.32
+Image: 26.56622809463149_90.22839205914696.png</description>
+            <styleUrl>#222215</styleUrl>
+            <Point id="222213">
+                <coordinates>90.22879028320312,26.5661623242216,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222219">
+            <name>MedianOpening_0.66</name>
+            <description>Confidence: 0.66
+Image: 26.56482707708685_90.24033297150002.png</description>
+            <styleUrl>#222220</styleUrl>
+            <Point id="222218">
+                <coordinates>90.2406005859375,26.56479847121183,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222224">
+            <name>MedianOpening_0.36</name>
+            <description>Confidence: 0.36
+Image: 26.56448828986321_90.24331970358246.png</description>
+            <styleUrl>#222225</styleUrl>
+            <Point id="222223">
+                <coordinates>90.24343872070312,26.564482323795772,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222229">
+            <name>MedianOpening_0.82</name>
+            <description>Confidence: 0.82
+Image: 26.56267266781413_90.25924748373761.png</description>
+            <styleUrl>#222230</styleUrl>
+            <Point id="222228">
+                <coordinates>90.25961303710938,26.562629712953026,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222234">
+            <name>MedianOpening_0.75</name>
+            <description>Confidence: 0.75
+Image: 26.56067826716972_90.2769660794486.png</description>
+            <styleUrl>#222235</styleUrl>
+            <Point id="222233">
+                <coordinates>90.276611328125,26.56071139679419,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222239">
+            <name>MedianOpening_0.74</name>
+            <description>Confidence: 0.74
+Image: 26.55765049611017_90.29140116112421.png</description>
+            <styleUrl>#222240</styleUrl>
+            <Point id="222238">
+                <coordinates>90.29168701171875,26.557687234461007,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222244">
+            <name>MedianOpening_0.83</name>
+            <description>Confidence: 0.83
+Image: 26.55712318689887_90.30820069527374.png</description>
+            <styleUrl>#222245</styleUrl>
+            <Point id="222243">
+                <coordinates>90.3082275390625,26.55713126866285,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222249">
+            <name>MedianOpening_0.88</name>
+            <description>Confidence: 0.88
+Image: 26.556109858863_90.31614965347002.png</description>
+            <styleUrl>#222250</styleUrl>
+            <Point id="222248">
+                <coordinates>90.31646728515625,26.556085007033055,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222254">
+            <name>MedianOpening_0.89</name>
+            <description>Confidence: 0.89
+Image: 26.55518359633031_90.3230988671527.png</description>
+            <styleUrl>#222255</styleUrl>
+            <Point id="222253">
+                <coordinates>90.32327270507812,26.555173147868643,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222259">
+            <name>MedianOpening_0.40</name>
+            <description>Confidence: 0.40
+Image: 26.55473141720108_90.3260666472338.png</description>
+            <styleUrl>#222260</styleUrl>
+            <Point id="222258">
+                <coordinates>90.3262939453125,26.55471339703039,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222264">
+            <name>MedianOpening_0.35</name>
+            <description>Confidence: 0.35
+Image: 26.55473645299539_90.32905876014223.png</description>
+            <styleUrl>#222265</styleUrl>
+            <Point id="222263">
+                <coordinates>90.32879638671875,26.55496236532118,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222269">
+            <name>MedianOpening_0.48</name>
+            <description>Confidence: 0.48
+Image: 26.55260539154494_90.34276711597201.png</description>
+            <styleUrl>#222270</styleUrl>
+            <Point id="222268">
+                <coordinates>90.34271240234375,26.552620820088194,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222274">
+            <name>MedianOpening_0.36</name>
+            <description>Confidence: 0.36
+Image: 26.54659872131436_90.35499222652071.png</description>
+            <styleUrl>#222275</styleUrl>
+            <Point id="222273">
+                <coordinates>90.355224609375,26.546333694956267,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222279">
+            <name>MedianOpening_0.48</name>
+            <description>Confidence: 0.48
+Image: 26.54513708175444_90.35752627319118.png</description>
+            <styleUrl>#222280</styleUrl>
+            <Point id="222278">
+                <coordinates>90.35775756835938,26.545038345496806,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222284">
+            <name>MedianOpening_0.56</name>
+            <description>Confidence: 0.56
+Image: 26.54895476202474_90.36788120835826.png</description>
+            <styleUrl>#222285</styleUrl>
+            <Point id="222283">
+                <coordinates>90.3681640625,26.54899308708464,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222289">
+            <name>MedianOpening_0.40</name>
+            <description>Confidence: 0.40
+Image: 26.5535378646365_90.3861757750299.png</description>
+            <styleUrl>#222290</styleUrl>
+            <Point id="222288">
+                <coordinates>90.38604736328125,26.553512842958817,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222294">
+            <name>MedianOpening_0.33</name>
+            <description>Confidence: 0.33
+Image: 26.55221412427618_90.40261470886703.png</description>
+            <styleUrl>#222295</styleUrl>
+            <Point id="222293">
+                <coordinates>90.40261840820312,26.552073994417803,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222299">
+            <name>MedianOpening_0.26</name>
+            <description>Confidence: 0.26
+Image: 26.55221412427618_90.40261470886703.png</description>
+            <styleUrl>#222300</styleUrl>
+            <Point id="222298">
+                <coordinates>90.40298461914062,26.55203580817021,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222304">
+            <name>MedianOpening_0.54</name>
+            <description>Confidence: 0.54
+Image: 26.55212967763554_90.41264631360978.png</description>
+            <styleUrl>#222305</styleUrl>
+            <Point id="222303">
+                <coordinates>90.41275024414062,26.55213051004089,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222309">
+            <name>MedianOpening_0.60</name>
+            <description>Confidence: 0.60
+Image: 26.54353196754148_90.42671406098044.png</description>
+            <styleUrl>#222310</styleUrl>
+            <Point id="222308">
+                <coordinates>90.42633056640625,26.54383005232947,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222314">
+            <name>MedianOpening_0.31</name>
+            <description>Confidence: 0.31
+Image: 26.5417644174707_90.43021216489149.png</description>
+            <styleUrl>#222315</styleUrl>
+            <Point id="222313">
+                <coordinates>90.43023681640625,26.54161201454979,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222319">
+            <name>MedianOpening_0.27</name>
+            <description>Confidence: 0.27
+Image: 26.54051203598809_90.43288093430013.png</description>
+            <styleUrl>#222320</styleUrl>
+            <Point id="222318">
+                <coordinates>90.4332275390625,26.540334943038893,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222324">
+            <name>MedianOpening_0.41</name>
+            <description>Confidence: 0.41
+Image: 26.53929018788364_90.43662114167874.png</description>
+            <styleUrl>#222325</styleUrl>
+            <Point id="222323">
+                <coordinates>90.43655395507812,26.539290055773364,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222329">
+            <name>MedianOpening_0.55</name>
+            <description>Confidence: 0.55
+Image: 26.53318877256075_90.4524344033782.png</description>
+            <styleUrl>#222330</styleUrl>
+            <Point id="222328">
+                <coordinates>90.45245361328125,26.533165664062132,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222334">
+            <name>MedianOpening_0.33</name>
+            <description>Confidence: 0.33
+Image: 26.52425127561295_90.48054913637999.png</description>
+            <styleUrl>#222335</styleUrl>
+            <Point id="222333">
+                <coordinates>90.48077392578125,26.523997561401885,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222339">
+            <name>MedianOpening_0.25</name>
+            <description>Confidence: 0.25
+Image: 26.52425127561295_90.48054913637999.png</description>
+            <styleUrl>#222340</styleUrl>
+            <Point id="222338">
+                <coordinates>90.48086547851562,26.524277152761734,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222344">
+            <name>MedianOpening_0.48</name>
+            <description>Confidence: 0.48
+Image: 26.52374026766429_90.4824737090052.png</description>
+            <styleUrl>#222345</styleUrl>
+            <Point id="222343">
+                <coordinates>90.48220825195312,26.52377755460722,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222349">
+            <name>MedianOpening_0.66</name>
+            <description>Confidence: 0.66
+Image: 26.51970830941505_90.49788561707935.png</description>
+            <styleUrl>#222350</styleUrl>
+            <Point id="222348">
+                <coordinates>90.49819946289062,26.51962026362893,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222354">
+            <name>MedianOpening_0.74</name>
+            <description>Confidence: 0.74
+Image: 26.51870491431843_90.50174067616689.png</description>
+            <styleUrl>#222355</styleUrl>
+            <Point id="222353">
+                <coordinates>90.50143432617188,26.51880437187483,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222359">
+            <name>MedianOpening_0.40</name>
+            <description>Confidence: 0.40
+Image: 26.51818036051457_90.50366155549685.png</description>
+            <styleUrl>#222360</styleUrl>
+            <Point id="222358">
+                <coordinates>90.50369262695312,26.518526295083383,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222364">
+            <name>MedianOpening_0.49</name>
+            <description>Confidence: 0.49
+Image: 26.51579326050126_90.51016300310059.png</description>
+            <styleUrl>#222365</styleUrl>
+            <Point id="222363">
+                <coordinates>90.5098876953125,26.51601135021894,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222369">
+            <name>MedianOpening_0.40</name>
+            <description>Confidence: 0.40
+Image: 26.50906665378209_90.53514832658308.png</description>
+            <styleUrl>#222370</styleUrl>
+            <Point id="222368">
+                <coordinates>90.53549194335938,26.509069755490714,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222374">
+            <name>MedianOpening_0.41</name>
+            <description>Confidence: 0.41
+Image: 26.50509348094766_90.54847428842238.png</description>
+            <styleUrl>#222375</styleUrl>
+            <Point id="222373">
+                <coordinates>90.54885864257812,26.505104469655386,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222379">
+            <name>MedianOpening_0.26</name>
+            <description>Confidence: 0.26
+Image: 26.50099979377054_90.5585219193849.png</description>
+            <styleUrl>#222380</styleUrl>
+            <Point id="222378">
+                <coordinates>90.55889892578125,26.500697417235926,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222384">
+            <name>MedianOpening_0.30</name>
+            <description>Confidence: 0.30
+Image: 26.50057981999136_90.55940957217383.png</description>
+            <styleUrl>#222385</styleUrl>
+            <Point id="222383">
+                <coordinates>90.55902099609375,26.500899130677183,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222389">
+            <name>MedianOpening_0.41</name>
+            <description>Confidence: 0.41
+Image: 26.48786505468614_90.60246828631118.png</description>
+            <styleUrl>#222390</styleUrl>
+            <Point id="222388">
+                <coordinates>90.60226440429688,26.487764096019035,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222394">
+            <name>MedianOpening_0.41</name>
+            <description>Confidence: 0.41
+Image: 26.48786505468614_90.60246828631118.png</description>
+            <styleUrl>#222395</styleUrl>
+            <Point id="222393">
+                <coordinates>90.60284423828125,26.48772588837715,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222399">
+            <name>MedianOpening_0.45</name>
+            <description>Confidence: 0.45
+Image: 26.48946272017036_90.61326008988213.png</description>
+            <styleUrl>#222400</styleUrl>
+            <Point id="222398">
+                <coordinates>90.61361694335938,26.48956901055425,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222404">
+            <name>MedianOpening_0.49</name>
+            <description>Confidence: 0.49
+Image: 26.48768531306196_90.6329733482473.png</description>
+            <styleUrl>#222405</styleUrl>
+            <Point id="222403">
+                <coordinates>90.63259887695312,26.487676982577035,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222409">
+            <name>MedianOpening_0.77</name>
+            <description>Confidence: 0.77
+Image: 26.48714070486286_90.64298565618229.png</description>
+            <styleUrl>#222410</styleUrl>
+            <Point id="222408">
+                <coordinates>90.64303588867188,26.48713901740274,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222414">
+            <name>MedianOpening_0.83</name>
+            <description>Confidence: 0.83
+Image: 26.56169030612983_90.07948435291422.png</description>
+            <styleUrl>#222415</styleUrl>
+            <Point id="222413">
+                <coordinates>90.079833984375,26.561594192772638,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222419">
+            <name>MedianOpening_0.36</name>
+            <description>Confidence: 0.36
+Image: 26.5614051910167_90.08043616885084.png</description>
+            <styleUrl>#222420</styleUrl>
+            <Point id="222418">
+                <coordinates>90.08004760742188,26.56150713533995,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222424">
+            <name>MedianOpening_0.55</name>
+            <description>Confidence: 0.55
+Image: 26.55179861570494_90.09802719815785.png</description>
+            <styleUrl>#222425</styleUrl>
+            <Point id="222423">
+                <coordinates>90.09796142578125,26.5518051629644,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222429">
+            <name>MedianOpening_0.30</name>
+            <description>Confidence: 0.30
+Image: 26.5330462980928_90.11769604763286.png</description>
+            <styleUrl>#222430</styleUrl>
+            <Point id="222428">
+                <coordinates>90.117919921875,26.533118305307028,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222434">
+            <name>MedianOpening_0.91</name>
+            <description>Confidence: 0.91
+Image: 26.54597299065794_90.12986499104875.png</description>
+            <styleUrl>#222435</styleUrl>
+            <Point id="222433">
+                <coordinates>90.12994384765625,26.546026661796468,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222439">
+            <name>MedianOpening_0.67</name>
+            <description>Confidence: 0.67
+Image: 26.55124274563801_90.13671083848116.png</description>
+            <styleUrl>#222440</styleUrl>
+            <Point id="222438">
+                <coordinates>90.1370849609375,26.551449265809367,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222444">
+            <name>MedianOpening_0.72</name>
+            <description>Confidence: 0.72
+Image: 26.55170230144779_90.13757989118852.png</description>
+            <styleUrl>#222445</styleUrl>
+            <Point id="222443">
+                <coordinates>90.13720703125,26.551488979709745,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222449">
+            <name>MedianOpening_0.51</name>
+            <description>Confidence: 0.51
+Image: 26.55260712787654_90.13931198187792.png</description>
+            <styleUrl>#222450</styleUrl>
+            <Point id="222448">
+                <coordinates>90.1390380859375,26.552486405081346,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222454">
+            <name>MedianOpening_0.88</name>
+            <description>Confidence: 0.88
+Image: 26.55369969974381_90.1460620658232.png</description>
+            <styleUrl>#222455</styleUrl>
+            <Point id="222453">
+                <coordinates>90.145751953125,26.553705299037794,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222459">
+            <name>MedianOpening_0.53</name>
+            <description>Confidence: 0.53
+Image: 26.55163450930575_90.15969113524433.png</description>
+            <styleUrl>#222460</styleUrl>
+            <Point id="222458">
+                <coordinates>90.15969848632812,26.551641725352262,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222464">
+            <name>MedianOpening_0.69</name>
+            <description>Confidence: 0.69
+Image: 26.55120730654566_90.1666079587879.png</description>
+            <styleUrl>#222465</styleUrl>
+            <Point id="222463">
+                <coordinates>90.1668701171875,26.551296519910466,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222469">
+            <name>MedianOpening_0.76</name>
+            <description>Confidence: 0.76
+Image: 26.55889916349681_90.17881757136196.png</description>
+            <styleUrl>#222470</styleUrl>
+            <Point id="222468">
+                <coordinates>90.1790771484375,26.5590695003771,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222474">
+            <name>MedianOpening_0.36</name>
+            <description>Confidence: 0.36
+Image: 26.56259143015169_90.18321739653057.png</description>
+            <styleUrl>#222475</styleUrl>
+            <Point id="222473">
+                <coordinates>90.18356323242188,26.562842008707428,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222479">
+            <name>MedianOpening_0.30</name>
+            <description>Confidence: 0.30
+Image: 26.5632053233928_90.18395313007402.png</description>
+            <styleUrl>#222480</styleUrl>
+            <Point id="222478">
+                <coordinates>90.18356323242188,26.562860336380005,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222484">
+            <name>MedianOpening_0.71</name>
+            <description>Confidence: 0.71
+Image: 26.56381921663373_90.18468886361698.png</description>
+            <styleUrl>#222485</styleUrl>
+            <Point id="222483">
+                <coordinates>90.18502807617188,26.564108138528937,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222489">
+            <name>MedianOpening_0.29</name>
+            <description>Confidence: 0.29
+Image: 26.56443404576262_90.18542362634591.png</description>
+            <styleUrl>#222490</styleUrl>
+            <Point id="222488">
+                <coordinates>90.18502807617188,26.564108138528937,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222494">
+            <name>MedianOpening_0.88</name>
+            <description>Confidence: 0.88
+Image: 26.5675153611757_90.18908988200764.png</description>
+            <styleUrl>#222495</styleUrl>
+            <Point id="222493">
+                <coordinates>90.18899536132812,26.56744674429636,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222499">
+            <name>MedianOpening_0.26</name>
+            <description>Confidence: 0.26
+Image: 26.56855684676032_90.19072042987573.png</description>
+            <styleUrl>#222500</styleUrl>
+            <Point id="222498">
+                <coordinates>90.19085693359375,26.568608971693713,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222504">
+            <name>MedianOpening_0.28</name>
+            <description>Confidence: 0.28
+Image: 26.56663534078562_90.19988648432508.png</description>
+            <styleUrl>#222505</styleUrl>
+            <Point id="222503">
+                <coordinates>90.19964599609375,26.566738100518336,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222509">
+            <name>MedianOpening_0.79</name>
+            <description>Confidence: 0.79
+Image: 26.56688884892295_90.21654677936866.png</description>
+            <styleUrl>#222510</styleUrl>
+            <Point id="222508">
+                <coordinates>90.21685791015625,26.566785445390117,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222514">
+            <name>MedianOpening_0.43</name>
+            <description>Confidence: 0.43
+Image: 26.56622809463149_90.22839205914696.png</description>
+            <styleUrl>#222515</styleUrl>
+            <Point id="222513">
+                <coordinates>90.22811889648438,26.566276868808252,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222519">
+            <name>MedianOpening_0.32</name>
+            <description>Confidence: 0.32
+Image: 26.56622809463149_90.22839205914696.png</description>
+            <styleUrl>#222520</styleUrl>
+            <Point id="222518">
+                <coordinates>90.22879028320312,26.5661623242216,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222524">
+            <name>MedianOpening_0.66</name>
+            <description>Confidence: 0.66
+Image: 26.56482707708685_90.24033297150002.png</description>
+            <styleUrl>#222525</styleUrl>
+            <Point id="222523">
+                <coordinates>90.2406005859375,26.56479847121183,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222529">
+            <name>MedianOpening_0.36</name>
+            <description>Confidence: 0.36
+Image: 26.56448828986321_90.24331970358246.png</description>
+            <styleUrl>#222530</styleUrl>
+            <Point id="222528">
+                <coordinates>90.24343872070312,26.564482323795772,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222534">
+            <name>MedianOpening_0.82</name>
+            <description>Confidence: 0.82
+Image: 26.56267266781413_90.25924748373761.png</description>
+            <styleUrl>#222535</styleUrl>
+            <Point id="222533">
+                <coordinates>90.25961303710938,26.562629712953026,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222539">
+            <name>MedianOpening_0.75</name>
+            <description>Confidence: 0.75
+Image: 26.56067826716972_90.2769660794486.png</description>
+            <styleUrl>#222540</styleUrl>
+            <Point id="222538">
+                <coordinates>90.276611328125,26.56071139679419,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222544">
+            <name>MedianOpening_0.74</name>
+            <description>Confidence: 0.74
+Image: 26.55765049611017_90.29140116112421.png</description>
+            <styleUrl>#222545</styleUrl>
+            <Point id="222543">
+                <coordinates>90.29168701171875,26.557687234461007,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222549">
+            <name>MedianOpening_0.83</name>
+            <description>Confidence: 0.83
+Image: 26.55712318689887_90.30820069527374.png</description>
+            <styleUrl>#222550</styleUrl>
+            <Point id="222548">
+                <coordinates>90.3082275390625,26.55713126866285,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222554">
+            <name>MedianOpening_0.88</name>
+            <description>Confidence: 0.88
+Image: 26.556109858863_90.31614965347002.png</description>
+            <styleUrl>#222555</styleUrl>
+            <Point id="222553">
+                <coordinates>90.31646728515625,26.556085007033055,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222559">
+            <name>MedianOpening_0.89</name>
+            <description>Confidence: 0.89
+Image: 26.55518359633031_90.3230988671527.png</description>
+            <styleUrl>#222560</styleUrl>
+            <Point id="222558">
+                <coordinates>90.32327270507812,26.555173147868643,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222564">
+            <name>MedianOpening_0.40</name>
+            <description>Confidence: 0.40
+Image: 26.55473141720108_90.3260666472338.png</description>
+            <styleUrl>#222565</styleUrl>
+            <Point id="222563">
+                <coordinates>90.3262939453125,26.55471339703039,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222569">
+            <name>MedianOpening_0.35</name>
+            <description>Confidence: 0.35
+Image: 26.55473645299539_90.32905876014223.png</description>
+            <styleUrl>#222570</styleUrl>
+            <Point id="222568">
+                <coordinates>90.32879638671875,26.55496236532118,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222574">
+            <name>MedianOpening_0.48</name>
+            <description>Confidence: 0.48
+Image: 26.55260539154494_90.34276711597201.png</description>
+            <styleUrl>#222575</styleUrl>
+            <Point id="222573">
+                <coordinates>90.34271240234375,26.552620820088194,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222579">
+            <name>MedianOpening_0.36</name>
+            <description>Confidence: 0.36
+Image: 26.54659872131436_90.35499222652071.png</description>
+            <styleUrl>#222580</styleUrl>
+            <Point id="222578">
+                <coordinates>90.355224609375,26.546333694956267,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222584">
+            <name>MedianOpening_0.48</name>
+            <description>Confidence: 0.48
+Image: 26.54513708175444_90.35752627319118.png</description>
+            <styleUrl>#222585</styleUrl>
+            <Point id="222583">
+                <coordinates>90.35775756835938,26.545038345496806,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222589">
+            <name>MedianOpening_0.56</name>
+            <description>Confidence: 0.56
+Image: 26.54895476202474_90.36788120835826.png</description>
+            <styleUrl>#222590</styleUrl>
+            <Point id="222588">
+                <coordinates>90.3681640625,26.54899308708464,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222594">
+            <name>MedianOpening_0.40</name>
+            <description>Confidence: 0.40
+Image: 26.5535378646365_90.3861757750299.png</description>
+            <styleUrl>#222595</styleUrl>
+            <Point id="222593">
+                <coordinates>90.38604736328125,26.553512842958817,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222599">
+            <name>MedianOpening_0.33</name>
+            <description>Confidence: 0.33
+Image: 26.55221412427618_90.40261470886703.png</description>
+            <styleUrl>#222600</styleUrl>
+            <Point id="222598">
+                <coordinates>90.40261840820312,26.552073994417803,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222604">
+            <name>MedianOpening_0.26</name>
+            <description>Confidence: 0.26
+Image: 26.55221412427618_90.40261470886703.png</description>
+            <styleUrl>#222605</styleUrl>
+            <Point id="222603">
+                <coordinates>90.40298461914062,26.55203580817021,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222609">
+            <name>MedianOpening_0.54</name>
+            <description>Confidence: 0.54
+Image: 26.55212967763554_90.41264631360978.png</description>
+            <styleUrl>#222610</styleUrl>
+            <Point id="222608">
+                <coordinates>90.41275024414062,26.55213051004089,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222614">
+            <name>MedianOpening_0.60</name>
+            <description>Confidence: 0.60
+Image: 26.54353196754148_90.42671406098044.png</description>
+            <styleUrl>#222615</styleUrl>
+            <Point id="222613">
+                <coordinates>90.42633056640625,26.54383005232947,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222619">
+            <name>MedianOpening_0.31</name>
+            <description>Confidence: 0.31
+Image: 26.5417644174707_90.43021216489149.png</description>
+            <styleUrl>#222620</styleUrl>
+            <Point id="222618">
+                <coordinates>90.43023681640625,26.54161201454979,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222624">
+            <name>MedianOpening_0.27</name>
+            <description>Confidence: 0.27
+Image: 26.54051203598809_90.43288093430013.png</description>
+            <styleUrl>#222625</styleUrl>
+            <Point id="222623">
+                <coordinates>90.4332275390625,26.540334943038893,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222629">
+            <name>MedianOpening_0.41</name>
+            <description>Confidence: 0.41
+Image: 26.53929018788364_90.43662114167874.png</description>
+            <styleUrl>#222630</styleUrl>
+            <Point id="222628">
+                <coordinates>90.43655395507812,26.539290055773364,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222634">
+            <name>MedianOpening_0.55</name>
+            <description>Confidence: 0.55
+Image: 26.53318877256075_90.4524344033782.png</description>
+            <styleUrl>#222635</styleUrl>
+            <Point id="222633">
+                <coordinates>90.45245361328125,26.533165664062132,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222639">
+            <name>MedianOpening_0.33</name>
+            <description>Confidence: 0.33
+Image: 26.52425127561295_90.48054913637999.png</description>
+            <styleUrl>#222640</styleUrl>
+            <Point id="222638">
+                <coordinates>90.48077392578125,26.523997561401885,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222644">
+            <name>MedianOpening_0.25</name>
+            <description>Confidence: 0.25
+Image: 26.52425127561295_90.48054913637999.png</description>
+            <styleUrl>#222645</styleUrl>
+            <Point id="222643">
+                <coordinates>90.48086547851562,26.524277152761734,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222649">
+            <name>MedianOpening_0.48</name>
+            <description>Confidence: 0.48
+Image: 26.52374026766429_90.4824737090052.png</description>
+            <styleUrl>#222650</styleUrl>
+            <Point id="222648">
+                <coordinates>90.48220825195312,26.52377755460722,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222654">
+            <name>MedianOpening_0.66</name>
+            <description>Confidence: 0.66
+Image: 26.51970830941505_90.49788561707935.png</description>
+            <styleUrl>#222655</styleUrl>
+            <Point id="222653">
+                <coordinates>90.49819946289062,26.51962026362893,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222659">
+            <name>MedianOpening_0.74</name>
+            <description>Confidence: 0.74
+Image: 26.51870491431843_90.50174067616689.png</description>
+            <styleUrl>#222660</styleUrl>
+            <Point id="222658">
+                <coordinates>90.50143432617188,26.51880437187483,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222664">
+            <name>MedianOpening_0.40</name>
+            <description>Confidence: 0.40
+Image: 26.51818036051457_90.50366155549685.png</description>
+            <styleUrl>#222665</styleUrl>
+            <Point id="222663">
+                <coordinates>90.50369262695312,26.518526295083383,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222669">
+            <name>MedianOpening_0.49</name>
+            <description>Confidence: 0.49
+Image: 26.51579326050126_90.51016300310059.png</description>
+            <styleUrl>#222670</styleUrl>
+            <Point id="222668">
+                <coordinates>90.5098876953125,26.51601135021894,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222674">
+            <name>MedianOpening_0.40</name>
+            <description>Confidence: 0.40
+Image: 26.50906665378209_90.53514832658308.png</description>
+            <styleUrl>#222675</styleUrl>
+            <Point id="222673">
+                <coordinates>90.53549194335938,26.509069755490714,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222679">
+            <name>MedianOpening_0.41</name>
+            <description>Confidence: 0.41
+Image: 26.50509348094766_90.54847428842238.png</description>
+            <styleUrl>#222680</styleUrl>
+            <Point id="222678">
+                <coordinates>90.54885864257812,26.505104469655386,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222684">
+            <name>MedianOpening_0.26</name>
+            <description>Confidence: 0.26
+Image: 26.50099979377054_90.5585219193849.png</description>
+            <styleUrl>#222685</styleUrl>
+            <Point id="222683">
+                <coordinates>90.55889892578125,26.500697417235926,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222689">
+            <name>MedianOpening_0.30</name>
+            <description>Confidence: 0.30
+Image: 26.50057981999136_90.55940957217383.png</description>
+            <styleUrl>#222690</styleUrl>
+            <Point id="222688">
+                <coordinates>90.55902099609375,26.500899130677183,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222694">
+            <name>MedianOpening_0.41</name>
+            <description>Confidence: 0.41
+Image: 26.48786505468614_90.60246828631118.png</description>
+            <styleUrl>#222695</styleUrl>
+            <Point id="222693">
+                <coordinates>90.60226440429688,26.487764096019035,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222699">
+            <name>MedianOpening_0.41</name>
+            <description>Confidence: 0.41
+Image: 26.48786505468614_90.60246828631118.png</description>
+            <styleUrl>#222700</styleUrl>
+            <Point id="222698">
+                <coordinates>90.60284423828125,26.48772588837715,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222704">
+            <name>MedianOpening_0.45</name>
+            <description>Confidence: 0.45
+Image: 26.48946272017036_90.61326008988213.png</description>
+            <styleUrl>#222705</styleUrl>
+            <Point id="222703">
+                <coordinates>90.61361694335938,26.48956901055425,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222709">
+            <name>MedianOpening_0.49</name>
+            <description>Confidence: 0.49
+Image: 26.48768531306196_90.6329733482473.png</description>
+            <styleUrl>#222710</styleUrl>
+            <Point id="222708">
+                <coordinates>90.63259887695312,26.487676982577035,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="222714">
+            <name>MedianOpening_0.77</name>
+            <description>Confidence: 0.77
+Image: 26.48714070486286_90.64298565618229.png</description>
+            <styleUrl>#222715</styleUrl>
+            <Point id="222713">
+                <coordinates>90.64303588867188,26.48713901740274,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>
