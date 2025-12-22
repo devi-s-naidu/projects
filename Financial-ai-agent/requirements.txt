@@ -1,7 +1,0 @@
-yfinance
-pandas
-numpy
-ta
-openai
-python-dotenv
-python-multipart
