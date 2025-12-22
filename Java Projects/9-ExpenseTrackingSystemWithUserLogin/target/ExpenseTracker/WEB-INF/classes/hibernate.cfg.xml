@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database connection settings -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/expense_db</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">2003</property>
+
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name="connection.pool_size">5</property>
+
+        <!-- SQL dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+        <!-- Enable Hibernate's automatic session context management -->
+        <property name="current_session_context_class">thread</property>
+
+        <!-- Show executed SQL -->
+        <property name="show_sql">true</property>
+
+        <!-- Auto schema update -->
+        <property name="hbm2ddl.auto">update</property>
+
+        <!-- Annotated entity classes -->
+        <mapping class="com.gqt.model.User"/>
+        <mapping class="com.gqt.model.Expense"/>
+    </session-factory>
+</hibernate-configuration>
