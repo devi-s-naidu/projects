@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echoes of Reality | Deepfake Generation & Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-wave-square"></i> Echoes of Reality</h1>
+            <p>Advanced Deepfake Generation & Detection Platform</p>
+        </header>
+        
+        <div class="main-content">
+            <div class="nav-buttons">
+                <button class="nav-btn active" data-mode="generate">
+                    <i class="fas fa-magic"></i> Generate Deepfake
+                </button>
+                <button class="nav-btn" data-mode="detect">
+                    <i class="fas fa-search"></i> Detect Deepfake
+                </button>
+            </div>
+            
+            <div id="generateContent" class="content-area active">
+                <div class="upload-section">
+                    <h2><i class="fas fa-video"></i> Generate Lip-Synced Video</h2>
+                    
+                    <div class="file-input">
+                        <label for="videoFile"><i class="fas fa-file-video"></i> Source Video</label>
+                        <input type="file" id="videoFile" accept="video/*">
+                        <div id="videoFilePreview"></div>
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="audioFile"><i class="fas fa-file-audio"></i> Audio File (Optional)</label>
+                        <input type="file" id="audioFile" accept="audio/*">
+                        <div id="audioFilePreview"></div>
+                    </div>
+                    
+                    <div class="audio-record">
+                        <button id="recordAudio" class="record-btn">
+                            <i class="fas fa-microphone"></i> Record Audio
+                        </button>
+                        <span id="recordingStatus">Click to start recording</span>
+                    </div>
+                    
+                    <div class="text-input">
+                        <label for="textInput"><i class="fas fa-font"></i> Text Input (Optional)</label>
+                        <textarea id="textInput" placeholder="Enter text to convert to speech..."></textarea>
+                    </div>
+                    
+                    <button id="generateBtn" class="process-btn">
+                        <i class="fas fa-cogs"></i> Generate Deepfake
+                    </button>
+                </div>
+                
+                <div id="generateResults" class="results-section"></div>
+            </div>
+            
+            <div id="detectContent" class="content-area">
+                <div class="upload-section">
+                    <h2><i class="fas fa-shield-alt"></i> Deepfake Detection</h2>
+                    
+                    <div class="file-input">
+                        <label for="detectVideoFile"><i class="fas fa-file-video"></i> Upload Video for Detection</label>
+                        <input type="file" id="detectVideoFile" accept="video/*">
+                        <div id="detectVideoFilePreview"></div>
+                    </div>
+                    
+                    <button id="detectBtn" class="process-btn">
+                        <i class="fas fa-search"></i> Analyze Video
+                    </button>
+                </div>
+                
+                <div id="detectResults" class="results-section"></div>
+            </div>
+            
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <p>Processing... This may take a few moments</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Echoes of Reality &copy; 2024 | Advanced Deep Learning Platform</p>
+            <p class="disclaimer">Use responsibly. Generated content should comply with applicable laws and regulations.</p>
+        </footer>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

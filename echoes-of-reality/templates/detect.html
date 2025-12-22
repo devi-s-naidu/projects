@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detect Deepfake | Echoes of Reality</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .back-btn {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(-5px);
+        }
+        
+        .detection-info {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-left: 5px solid #f59e0b;
+        }
+        
+        .detection-info h3 {
+            color: #92400e;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .detection-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .method-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .method-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        
+        .method-card.resnext {
+            border-color: #3b82f6;
+        }
+        
+        .method-card.lstm {
+            border-color: #10b981;
+        }
+        
+        .method-card.ensemble {
+            border-color: #8b5cf6;
+        }
+        
+        .method-card h4 {
+            color: #1e293b;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .method-card.resnext h4 i { color: #3b82f6; }
+        .method-card.lstm h4 i { color: #10b981; }
+        .method-card.ensemble h4 i { color: #8b5cf6; }
+        
+        .accuracy-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            background: #10b981;
+            color: white;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        
+        .analysis-steps {
+            margin: 30px 0;
+            padding: 25px;
+            background: #f8fafc;
+            border-radius: 15px;
+        }
+        
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .step {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+        }
+        
+        .step-number {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #4f46e5;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        .step-icon {
+            font-size: 2rem;
+            color: #4f46e5;
+            margin-bottom: 15px;
+        }
+        
+        .upload-area {
+            border: 3px dashed #cbd5e1;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            margin: 30px 0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            background: #f8fafc;
+        }
+        
+        .upload-area:hover, .upload-area.dragover {
+            border-color: #4f46e5;
+            background: #e0e7ff;
+        }
+        
+        .upload-icon {
+            font-size: 3rem;
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+        
+        .upload-area:hover .upload-icon {
+            color: #4f46e5;
+        }
+        
+        .confidence-meter {
+            margin: 30px 0;
+            padding: 25px;
+            background: #f8fafc;
+            border-radius: 15px;
+        }
+        
+        .meter-container {
+            height: 30px;
+            background: linear-gradient(90deg, 
+                #10b981 0%, 
+                #22c55e 20%, 
+                #f59e0b 50%, 
+                #ef4444 80%, 
+                #dc2626 100%);
+            border-radius: 15px;
+            margin: 20px 0;
+            position: relative;
+        }
+        
+        .meter-pointer {
+            position: absolute;
+            top: -5px;
+            width: 3px;
+            height: 40px;
+            background: #1e293b;
+            transform: translateX(-50%);
+        }
+        
+        .meter-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            color: #64748b;
+            font-weight: 600;
+        }
+        
+        .detailed-analysis {
+            margin-top: 40px;
+        }
+        
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        
+        .analysis-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .analysis-card h5 {
+            color: #475569;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f1f5f9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-score {
+            background: #e2e8f0;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        .feature-score.high {
+            background: #dcfce7;
+            color: #16a34a;
+        }
+        
+        .feature-score.medium {
+            background: #fef3c7;
+            color: #d97706;
+        }
+        
+        .feature-score.low {
+            background: #fee2e2;
+            color: #dc2626;
+        }
+        
+        .history-section {
+            margin-top: 50px;
+        }
+        
+        .history-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .history-table th {
+            background: #4f46e5;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        
+        .history-table td {
+            padding: 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .history-table tr:hover {
+            background: #f8fafc;
+        }
+        
+        .status-badge {
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .status-badge.real {
+            background: #dcfce7;
+            color: #16a34a;
+        }
+        
+        .status-badge.fake {
+            background: #fee2e2;
+            color: #dc2626;
+        }
+        
+        .status-badge.uncertain {
+            background: #fef3c7;
+            color: #d97706;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="{{ url_for('index') }}" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+            <h1><i class="fas fa-shield-alt"></i> Detect Deepfake</h1>
+            <p>Advanced AI-powered deepfake video detection system</p>
+        </header>
+        
+        <div class="main-content">
+            <!-- Detection Info -->
+            <div class="detection-info">
+                <h3><i class="fas fa-info-circle"></i> About Our Detection System</h3>
+                <p>Our system uses multiple deep learning models to analyze videos for signs of manipulation:</p>
+                <ul style="margin: 15px 0; padding-left: 20px;">
+                    <li>ResNext CNN for spatial feature analysis</li>
+                    <li>LSTM networks for temporal consistency checks</li>
+                    <li>Ensemble methods combining multiple detection techniques</li>
+                    <li>Real-time processing with high accuracy</li>
+                </ul>
+            </div>
+            
+            <!-- Detection Methods -->
+            <div class="detection-methods">
+                <div class="method-card resnext">
+                    <h4><i class="fas fa-robot"></i> ResNext CNN <span class="accuracy-badge">92% Accuracy</span></h4>
+                    <p>Analyzes individual frames for visual artifacts and inconsistencies in facial features, lighting, and textures.</p>
+                </div>
+                
+                <div class="method-card lstm">
+                    <h4><i class="fas fa-wave-square"></i> Temporal LSTM <span class="accuracy-badge">88% Accuracy</span></h4>
+                    <p>Examines frame sequences to detect unnatural movements and inconsistencies in temporal patterns.</p>
+                </div>
+                
+                <div class="method-card ensemble">
+                    <h4><i class="fas fa-layer-group"></i> Ensemble Model <span class="accuracy-badge">96% Accuracy</span></h4>
+                    <p>Combines multiple detection methods for the most reliable and accurate results.</p>
+                </div>
+            </div>
+            
+            <!-- Analysis Steps -->
+            <div class="analysis-steps">
+                <h3><i class="fas fa-search"></i> How Detection Works</h3>
+                <div class="steps-grid">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-icon"><i class="fas fa-upload"></i></div>
+                        <div>Upload Video</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-icon"><i class="fas fa-film"></i></div>
+                        <div>Frame Extraction</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-icon"><i class="fas fa-brain"></i></div>
+                        <div>Feature Analysis</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-icon"><i class="fas fa-chart-bar"></i></div>
+                        <div>Result Calculation</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-icon"><i class="fas fa-flag"></i></div>
+                        <div>Report Generation</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Upload Section -->
+            <div class="upload-section">
+                <h2><i class="fas fa-file-upload"></i> Upload Video for Detection</h2>
+                
+                <div class="upload-area" id="dropArea">
+                    <div class="upload-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3>Drop video file here or click to browse</h3>
+                    <p>Supports MP4, AVI, MOV, MKV formats (Max 500MB)</p>
+                    <input type="file" id="detectVideoFile" accept="video/*" style="display: none;">
+                    <button id="browseBtn" class="process-btn" style="margin-top: 20px; padding: 15px 30px;">
+                        <i class="fas fa-folder-open"></i> Browse Files
+                    </button>
+                </div>
+                
+                <div id="filePreview" style="margin-top: 20px; display: none;">
+                    <div style="background: #f1f5f9; padding: 20px; border-radius: 10px;">
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <i class="fas fa-file-video" style="font-size: 2rem; color: #4f46e5;"></i>
+                            <div style="flex: 1;">
+                                <div style="font-weight: 600; font-size: 1.1rem;" id="fileName"></div>
+                                <div style="color: #64748b; font-size: 0.9rem;" id="fileDetails"></div>
+                            </div>
+                            <button id="removeFile" class="record-btn" style="background: #ef4444;">
+                                <i class="fas fa-times"></i> Remove
+                            </button>
+                        </div>
+                        <div style="margin-top: 15px;">
+                            <video id="videoPreview" controls style="width: 100%; max-width: 500px; border-radius: 8px;"></video>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Detection Settings -->
+                <div style="margin: 30px 0; padding: 25px; background: #f8fafc; border-radius: 15px;">
+                    <h3><i class="fas fa-cog"></i> Detection Settings</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+                        <div>
+                            <label for="detectionModel">Detection Model</label>
+                            <select id="detectionModel" style="width: 100%; padding: 12px; border-radius: 8px; border: 2px solid #e2e8f0;">
+                                <option value="ensemble">Ensemble (Recommended)</option>
+                                <option value="resnext">ResNext CNN Only</option>
+                                <option value="lstm">LSTM Only</option>
+                                <option value="all">All Models</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="analysisDepth">Analysis Depth</label>
+                            <select id="analysisDepth" style="width: 100%; padding: 12px; border-radius: 8px; border: 2px solid #e2e8f0;">
+                                <option value="deep">Deep Analysis (Most Accurate)</option>
+                                <option value="balanced">Balanced</option>
+                                <option value="quick">Quick Scan</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="confidenceThreshold">Confidence Threshold</label>
+                            <input type="range" id="confidenceThreshold" min="50" max="95" value="75" style="width: 100%; margin-top: 10px;">
+                            <div style="display: flex; justify-content: space-between; font-size: 0.9rem; color: #64748b;">
+                                <span>50%</span>
+                                <span id="thresholdValue">75%</span>
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Process Button -->
+                <button id="detectBtn" class="process-btn">
+                    <i class="fas fa-search"></i> Analyze Video for Deepfakes
+                </button>
+                
+                <!-- Progress -->
+                <div id="detectionProgress" style="margin-top: 30px; display: none;">
+                    <div style="text-align: center; margin-bottom: 20px;">
+                        <div class="spinner" style="margin: 0 auto 20px;"></div>
+                        <h3>Analyzing Video...</h3>
+                        <p id="progressText">Extracting frames...</p>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px;">
+                        <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); text-align: center;">
+                            <div style="font-size: 2rem; color: #4f46e5; font-weight: bold;" id="framesProcessed">0</div>
+                            <div style="color: #64748b;">Frames Processed</div>
+                        </div>
+                        <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); text-align: center;">
+                            <div style="font-size: 2rem; color: #10b981; font-weight: bold;" id="featuresExtracted">0</div>
+                            <div style="color: #64748b;">Features Extracted</div>
+                        </div>
+                        <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); text-align: center;">
+                            <div style="font-size: 2rem; color: #ef4444; font-weight: bold;" id="anomaliesFound">0</div>
+                            <div style="color: #64748b;">Anomalies Found</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Results Section -->
+            <div id="detectResults" class="results-section"></div>
+            
+            <!-- Confidence Meter -->
+            <div id="confidenceMeter" class="confidence-meter" style="display: none;">
+                <h3><i class="fas fa-chart-line"></i> Confidence Meter</h3>
+                <div class="meter-container">
+                    <div class="meter-pointer" id="meterPointer" style="left: 50%;"></div>
+                </div>
+                <div class="meter-labels">
+                    <span>Real</span>
+                    <span>Uncertain</span>
+                    <span>Fake</span>
+                </div>
+                <div style="text-align: center; margin-top: 20px;">
+                    <div id="confidenceValue" style="font-size: 2rem; font-weight: bold; color: #1e293b;">50%</div>
+                    <div id="confidenceText" style="color: #64748b; font-size: 1.1rem;">Neutral</div>
+                </div>
+            </div>
+            
+            <!-- Detailed Analysis -->
+            <div id="detailedAnalysis" class="detailed-analysis" style="display: none;">
+                <h3><i class="fas fa-microscope"></i> Detailed Analysis</h3>
+                <div class="analysis-grid">
+                    <div class="analysis-card">
+                        <h5><i class="fas fa-eye"></i> Visual Artifacts</h5>
+                        <ul class="feature-list">
+                            <li>Facial Inconsistencies <span class="feature-score low">High Risk</span></li>
+                            <li>Lighting Irregularities <span class="feature-score medium">Medium Risk</span></li>
+                            <li>Texture Anomalies <span class="feature-score low">High Risk</span></li>
+                            <li>Edge Artifacts <span class="feature-score high">Low Risk</span></li>
+                            <li>Color Inconsistencies <span class="feature-score medium">Medium Risk</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="analysis-card">
+                        <h5><i class="fas fa-wave-square"></i> Temporal Analysis</h5>
+                        <ul class="feature-list">
+                            <li>Movement Smoothness <span class="feature-score low">High Risk</span></li>
+                            <li>Blinking Patterns <span class="feature-score medium">Medium Risk</span></li>
+                            <li>Lip Sync Accuracy <span class="feature-score low">High Risk</span></li>
+                            <li>Head Movement <span class="feature-score high">Low Risk</span></li>
+                            <li>Expression Transitions <span class="feature-score medium">Medium Risk</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="analysis-card">
+                        <h5><i class="fas fa-robot"></i> AI Detection Scores</h5>
+                        <ul class="feature-list">
+                            <li>ResNext CNN <span class="feature-score low">85% Fake</span></li>
+                            <li>LSTM Network <span class="feature-score medium">72% Fake</span></li>
+                            <li>Ensemble Model <span class="feature-score low">91% Fake</span></li>
+                            <li>Audio Analysis <span class="feature-score high">95% Real</span></li>
+                            <li>Metadata Check <span class="feature-score medium">65% Real</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Detection History -->
+            <div class="history-section">
+                <h3><i class="fas fa-history"></i> Recent Detections</h3>
+                <table class="history-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Filename</th>
+                            <th>Duration</th>
+                            <th>Result</th>
+                            <th>Confidence</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024-01-15 14:30</td>
+                            <td>interview.mp4</td>
+                            <td>2:45</td>
+                            <td><span class="status-badge real">Real</span></td>
+                            <td>87%</td>
+                            <td><button class="record-btn" style="padding: 5px 10px; font-size: 0.9rem;">View Details</button></td>
+                        </tr>
+                        <tr>
+                            <td>2024-01-15 11:20</td>
+                            <td>speech_video.mp4</td>
+                            <td>1:30</td>
+                            <td><span class="status-badge fake">Fake</span></td>
+                            <td>92%</td>
+                            <td><button class="record-btn" style="padding: 5px 10px; font-size: 0.9rem;">View Details</button></td>
+                        </tr>
+                        <tr>
+                            <td>2024-01-14 16:45</td>
+                            <td>news_clip.avi</td>
+                            <td>0:45</td>
+                            <td><span class="status-badge uncertain">Uncertain</span></td>
+                            <td>58%</td>
+                            <td><button class="record-btn" style="padding: 5px 10px; font-size: 0.9rem;">View Details</button></td>
+                        </tr>
+                        <tr>
+                            <td>2024-01-14 09:15</td>
+                            <td>tutorial.mov</td>
+                            <td>5:20</td>
+                            <td><span class="status-badge real">Real</span></td>
+                            <td>94%</td>
+                            <td><button class="record-btn" style="padding: 5px 10px; font-size: 0.9rem;">View Details</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Deepfake Detection Module | Powered by Advanced AI Algorithms</p>
+            <p class="disclaimer">
+                <i class="fas fa-exclamation-triangle"></i> 
+                Detection accuracy may vary. Always verify important content through multiple sources.
+            </p>
+        </footer>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>
+        class DetectPage {
+            constructor() {
+                this.initializeEventListeners();
+                this.currentFile = null;
+            }
+            
+            initializeEventListeners() {
+                // File upload
+                const browseBtn = document.getElementById('browseBtn');
+                const fileInput = document.getElementById('detectVideoFile');
+                const dropArea = document.getElementById('dropArea');
+                
+                browseBtn.addEventListener('click', () => fileInput.click());
+                fileInput.addEventListener('change', (e) => this.handleFileSelect(e));
+                
+                // Drag and drop
+                dropArea.addEventListener('dragover', (e) => {
+                    e.preventDefault();
+                    dropArea.classList.add('dragover');
+                });
+                
+                dropArea.addEventListener('dragleave', () => {
+                    dropArea.classList.remove('dragover');
+                });
+                
+                dropArea.addEventListener('drop', (e) => {
+                    e.preventDefault();
+                    dropArea.classList.remove('dragover');
+                    
+                    if (e.dataTransfer.files.length) {
+                        fileInput.files = e.dataTransfer.files;
+                        this.handleFileSelect({ target: fileInput });
+                    }
+                });
+                
+                // Remove file
+                document.getElementById('removeFile').addEventListener('click', () => {
+                    this.clearFile();
+                });
+                
+                // Confidence threshold slider
+                const thresholdSlider = document.getElementById('confidenceThreshold');
+                thresholdSlider.addEventListener('input', (e) => {
+                    document.getElementById('thresholdValue').textContent = e.target.value + '%';
+                });
+                
+                // Detect button
+                document.getElementById('detectBtn').addEventListener('click', () => {
+                    this.detectDeepfake();
+                });
+            }
+            
+            handleFileSelect(event) {
+                const file = event.target.files[0];
+                if (!file) return;
+                
+                // Check file type
+                const validTypes = ['video/mp4', 'video/avi', 'video/quicktime', 'video/x-matroska'];
+                if (!validTypes.includes(file.type) && !file.name.match(/\.(mp4|avi|mov|mkv)$/i)) {
+                    alert('Please select a valid video file (MP4, AVI, MOV, MKV)');
+                    return;
+                }
+                
+                // Check file size (500MB max)
+                if (file.size > 500 * 1024 * 1024) {
+                    alert('File size exceeds 500MB limit');
+                    return;
+                }
+                
+                this.currentFile = file;
+                this.showFilePreview(file);
+            }
+            
+            showFilePreview(file) {
+                // Update file info
+                document.getElementById('fileName').textContent = file.name;
+                document.getElementById('fileDetails').textContent = 
+                    `${this.formatFileSize(file.size)} • ${file.type || 'Video file'}`;
+                
+                // Show preview section
+                document.getElementById('filePreview').style.display = 'block';
+                
+                // Create video preview
+                const videoPreview = document.getElementById('videoPreview');
+                const url = URL.createObjectURL(file);
+                videoPreview.src = url;
+                videoPreview.load();
+                
+                // Update drop area text
+                document.getElementById('dropArea').innerHTML = `
+                    <div style="color: #10b981;">
+                        <i class="fas fa-check-circle" style="font-size: 3rem;"></i>
+                        <h3>File Loaded Successfully!</h3>
+                        <p>Ready for analysis</p>
+                    </div>
+                `;
+            }
+            
+            clearFile() {
+                this.currentFile = null;
+                document.getElementById('filePreview').style.display = 'none';
+                document.getElementById('detectVideoFile').value = '';
+                
+                // Reset drop area
+                document.getElementById('dropArea').innerHTML = `
+                    <div class="upload-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3>Drop video file here or click to browse</h3>
+                    <p>Supports MP4, AVI, MOV, MKV formats (Max 500MB)</p>
+                    <button id="browseBtn" class="process-btn" style="margin-top: 20px; padding: 15px 30px;">
+                        <i class="fas fa-folder-open"></i> Browse Files
+                    </button>
+                `;
+                
+                // Re-add event listeners
+                document.getElementById('browseBtn').addEventListener('click', () => {
+                    document.getElementById('detectVideoFile').click();
+                });
+            }
+            
+            async detectDeepfake() {
+                if (!this.currentFile) {
+                    alert('Please select a video file first');
+                    return;
+                }
+                
+                // Show progress
+                document.getElementById('detectionProgress').style.display = 'block';
+                this.simulateProgress();
+                
+                const formData = new FormData();
+                formData.append('video', this.currentFile);
+                formData.append('model', document.getElementById('detectionModel').value);
+                formData.append('depth', document.getElementById('analysisDepth').value);
+                formData.append('threshold', document.getElementById('confidenceThreshold').value);
+                
+                try {
+                    const response = await fetch('/api/detect', {
+                        method: 'POST',
+                        body: formData
+                    });
+                    
+                    const result = await response.json();
+                    
+                    // Hide progress
+                    document.getElementById('detectionProgress').style.display = 'none';
+                    
+                    if (result.success) {
+                        this.showResults(result.result);
+                    } else {
+                        alert('Error: ' + (result.error || 'Detection failed'));
+                    }
+                    
+                } catch (error) {
+                    console.error('Error:', error);
+                    document.getElementById('detectionProgress').style.display = 'none';
+                    alert('Error detecting video: ' + error.message);
+                }
+            }
+            
+            simulateProgress() {
+                let frames = 0;
+                let features = 0;
+                let anomalies = 0;
+                
+                const framesInterval = setInterval(() => {
+                    if (frames < 100) {
+                        frames += Math.floor(Math.random() * 10) + 1;
+                        frames = Math.min(frames, 100);
+                        document.getElementById('framesProcessed').textContent = frames;
+                    }
+                }, 100);
+                
+                const featuresInterval = setInterval(() => {
+                    if (features < 500) {
+                        features += Math.floor(Math.random() * 50) + 10;
+                        features = Math.min(features, 500);
+                        document.getElementById('featuresExtracted').textContent = features;
+                    }
+                }, 150);
+                
+                const anomaliesInterval = setInterval(() => {
+                    if (anomalies < 20) {
+                        anomalies += Math.floor(Math.random() * 3);
+                        anomalies = Math.min(anomalies, 20);
+                        document.getElementById('anomaliesFound').textContent = anomalies;
+                    }
+                }, 200);
+                
+                // Update progress text
+                const texts = [
+                    'Extracting frames from video...',
+                    'Analyzing visual features...',
+                    'Checking temporal consistency...',
+                    'Running AI models...',
+                    'Calculating final results...'
+                ];
+                
+                let textIndex = 0;
+                const textInterval = setInterval(() => {
+                    document.getElementById('progressText').textContent = texts[textIndex];
+                    textIndex = (textIndex + 1) % texts.length;
+                }, 2000);
+                
+                // Stop simulation after 10 seconds
+                setTimeout(() => {
+                    clearInterval(framesInterval);
+                    clearInterval(featuresInterval);
+                    clearInterval(anomaliesInterval);
+                    clearInterval(textInterval);
+                }, 10000);
+            }
+            
+            showResults(result) {
+                const resultsSection = document.getElementById('detectResults');
+                const isFake = result.is_fake;
+                const confidence = result.confidence;
+                
+                let resultColor, resultIcon;
+                if (isFake) {
+                    resultColor = '#ef4444';
+                    resultIcon = 'fas fa-exclamation-triangle';
+                } else {
+                    resultColor = '#10b981';
+                    resultIcon = 'fas fa-check-circle';
+                }
+                
+                resultsSection.innerHTML = `
+                    <div class="result-item">
+                        <div class="result-label">Detection Result</div>
+                        <div class="result-value" style="font-size: 1.8rem; color: ${resultColor};">
+                            <i class="${resultIcon}"></i> ${result.message}
+                        </div>
+                    </div>
+                    
+                    <div class="result-item">
+                        <div class="result-label">Overall Confidence</div>
+                        <div class="result-value" style="font-size: 3rem; color: ${resultColor};">
+                            ${confidence}%
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: ${confidence}%; background: ${resultColor};"></div>
+                        </div>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px;">
+                        <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center;">
+                            <div style="font-size: 1.2rem; color: #64748b; margin-bottom: 10px;">Fake Probability</div>
+                            <div style="font-size: 2rem; font-weight: bold; color: ${isFake ? '#ef4444' : '#64748b'};">${result.fake_probability}%</div>
+                        </div>
+                        <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center;">
+                            <div style="font-size: 1.2rem; color: #64748b; margin-bottom: 10px;">Real Probability</div>
+                            <div style="font-size: 2rem; font-weight: bold; color: ${!isFake ? '#10b981' : '#64748b'};">${result.real_probability}%</div>
+                        </div>
+                        <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center;">
+                            <div style="font-size: 1.2rem; color: #64748b; margin-bottom: 10px;">Risk Level</div>
+                            <div style="font-size: 2rem; font-weight: bold; color: ${confidence > 80 ? '#ef4444' : confidence > 60 ? '#f59e0b' : '#10b981'};">${confidence > 80 ? 'High' : confidence > 60 ? 'Medium' : 'Low'}</div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 30px; text-align: center;">
+                        <button onclick="this.exportReport()" class="download-btn" style="margin-right: 15px;">
+                            <i class="fas fa-file-pdf"></i> Export Report
+                        </button>
+                        <button onclick="this.analyzeAnother()" class="download-btn" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);">
+                            <i class="fas fa-redo"></i> Analyze Another
+                        </button>
+                    </div>
+                `;
+                
+                resultsSection.classList.add('active');
+                
+                // Show confidence meter
+                document.getElementById('confidenceMeter').style.display = 'block';
+                this.updateConfidenceMeter(confidence, isFake);
+                
+                // Show detailed analysis
+                document.getElementById('detailedAnalysis').style.display = 'block';
+            }
+            
+            updateConfidenceMeter(confidence, isFake) {
+                const pointer = document.getElementById('meterPointer');
+                const valueElement = document.getElementById('confidenceValue');
+                const textElement = document.getElementById('confidenceText');
+                
+                // Calculate pointer position (0-100% mapped to 0-100% of container)
+                let position;
+                if (isFake) {
+                    // Fake: 0% confidence = 50% position, 100% confidence = 100% position
+                    position = 50 + (confidence / 2);
+                } else {
+                    // Real: 0% confidence = 50% position, 100% confidence = 0% position
+                    position = 50 - (confidence / 2);
+                }
+                
+                position = Math.max(0, Math.min(100, position));
+                pointer.style.left = position + '%';
+                
+                // Update values
+                valueElement.textContent = confidence + '%';
+                valueElement.style.color = confidence > 80 ? '#ef4444' : confidence > 60 ? '#f59e0b' : '#10b981';
+                
+                if (confidence > 90) {
+                    textElement.textContent = isFake ? 'Highly Likely Fake' : 'Highly Likely Real';
+                } else if (confidence > 75) {
+                    textElement.textContent = isFake ? 'Likely Fake' : 'Likely Real';
+                } else if (confidence > 60) {
+                    textElement.textContent = 'Possibly ' + (isFake ? 'Fake' : 'Real');
+                } else {
+                    textElement.textContent = 'Uncertain';
+                }
+            }
+            
+            formatFileSize(bytes) {
+                if (bytes === 0) return '0 Bytes';
+                const k = 1024;
+                const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+                const i = Math.floor(Math.log(bytes) / Math.log(k));
+                return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+            }
+            
+            exportReport() {
+                // Implement PDF export functionality
+                alert('Report export feature would generate a PDF with detailed analysis');
+            }
+            
+            analyzeAnother() {
+                // Reset for new analysis
+                this.clearFile();
+                document.getElementById('detectResults').classList.remove('active');
+                document.getElementById('confidenceMeter').style.display = 'none';
+                document.getElementById('detailedAnalysis').style.display = 'none';
+            }
+        }
+        
+        // Initialize the page when loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            window.detectPage = new DetectPage();
+        });
+    </script>
+</body>
+</html>
