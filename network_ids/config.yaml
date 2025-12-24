@@ -1,0 +1,25 @@
+network:
+  interface: null  # null = default interface, or specify like "eth0", "wlan0", etc.
+  packet_count_limit: 0  # 0 = unlimited
+
+detection:
+  port_scan:
+    threshold: 10      # Alert if 10+ unique ports scanned
+    time_window: 30    # Within 30 seconds
+    
+  syn_flood:
+    threshold: 50      # Alert if 50+ SYN packets
+    time_window: 5     # Within 5 seconds
+    
+  icmp_flood:
+    threshold: 30      # Alert if 30+ ICMP packets
+    time_window: 3     # Within 3 seconds
+
+dashboard:
+  host: "127.0.0.1"
+  port: 5000
+  debug: false
+
+logging:
+  log_to_file: true
+  max_log_size_mb: 10

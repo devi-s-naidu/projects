@@ -1,0 +1,25 @@
+{
+  "network": {
+    "interface": null,
+    "packet_count_limit": 0
+  },
+  "detection": {
+    "port_scan": {
+      "threshold": 10,
+      "time_window": 30
+    },
+    "syn_flood": {
+      "threshold": 50,
+      "time_window": 5
+    },
+    "icmp_flood": {
+      "threshold": 30,
+      "time_window": 3
+    }
+  },
+  "dashboard": {
+    "host": "127.0.0.1",
+    "port": 5000,
+    "debug": false
+  }
+}
